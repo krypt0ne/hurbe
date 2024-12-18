@@ -242,6 +242,7 @@ const Contract = {
         address: hurbeId,
         functionName: "claimHurbe",
         args: [amount],
+        gas: BigInt(3_000_000)
       });
 
       const receipt = await waitForTransactionReceipt(config, { hash: result });
@@ -259,6 +260,7 @@ const Contract = {
         abi: hurbeAbi,
         address: hurbeId,
         functionName: "claimAll",
+        gas: BigInt(3_000_000)
       });
 
       const receipt = await waitForTransactionReceipt(config, { hash: result });
