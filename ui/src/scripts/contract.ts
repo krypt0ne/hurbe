@@ -174,6 +174,7 @@ const Contract = {
         functionName: "mintCard",
         args: [streamer, to, exclusive],
         value,
+        gas: BigInt(3_000_000)
       });
 
       const receipt = await waitForTransactionReceipt(config, { hash: result });
