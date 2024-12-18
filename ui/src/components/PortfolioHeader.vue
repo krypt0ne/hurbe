@@ -35,7 +35,7 @@ const claimAll = async () => {
         });
     } else {
         notify.push({
-            title: 'Error: Interracting with theta api',
+            title: 'Error: Interracting with media api',
             description: 'Please try again',
             category: 'error'
         });

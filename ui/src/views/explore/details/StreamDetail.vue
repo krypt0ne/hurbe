@@ -369,7 +369,7 @@ const startStream = async () => {
 
     if (!createdStream) {
         notify.push({
-            title: 'Error: Interracting with theta api',
+            title: 'Error: Interracting with media api',
             description: 'Please try again',
             category: 'error'
         });
@@ -385,7 +385,7 @@ const startStream = async () => {
 
     if (!updatedStream) {
         notify.push({
-            title: 'Error: Interracting with theta api',
+            title: 'Error: Interracting with media api',
             description: 'Please try again',
             category: 'error'
         });
