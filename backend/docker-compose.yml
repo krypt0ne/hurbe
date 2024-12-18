@@ -1,0 +1,30 @@
+services:
+  hurbe-backend:
+    depends_on:
+      - redis
+    image: hurbe.azurecr.io/hurbe-backend:latest
+    container_name: hurbe-backend
+    restart: always
+    ports:
+      - '80:80'
+    env_file: .env
+    networks:
+      - hurbe-net
+
+  redis:
+    image: 'redis:alpine'
+    container_name: redis
+    restart: always
+    ports:
+      - '6379:6379'
+    volumes:
+      - 'redis-data:/data'
+    networks:
+      - hurbe-net
+
+volumes:
+  redis-data:
+
+networks:
+  hurbe-net:
+    driver: bridge
