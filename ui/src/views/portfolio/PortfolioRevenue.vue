@@ -170,7 +170,7 @@ onMounted(() => {
             <div class="revenue_title">
                 <p>Total Tips Revenue</p>
                 <h3>{{ sum(Converter.toMoney(Converter.fromWei(revenue.totalClaimedHurbe)),
-                    Converter.fromWei(revenue.totalUnClaimedHurbe)) }} THUBE</h3>
+                    Converter.fromWei(revenue.totalUnClaimedHurbe)) }} HUB</h3>
             </div>
             <div class="revenue_amounts">
                 <div class="revenue_amount">
@@ -178,7 +178,7 @@ onMounted(() => {
                         <div class="revenue_amount_name_text">
                             <img src="/images/logo.png" alt="theta">
                             <p><span>{{ Converter.toMoney(Converter.fromWei(revenue.totalUnClaimedHurbe)) }}</span>
-                                THUBE ~ $0,00</p>
+                                HUB ~ $0,00</p>
                         </div>
 
                         <div class="revenue_amount_percent">{{
@@ -200,7 +200,7 @@ onMounted(() => {
                     <div class="revenue_amount_name">
                         <div class="revenue_amount_name_text">
                             <img src="/images/logo.png" alt="theta">
-                            <p><span>{{ Converter.toMoney(Converter.fromWei(revenue.totalClaimedHurbe)) }}</span> THUBE
+                            <p><span>{{ Converter.toMoney(Converter.fromWei(revenue.totalClaimedHurbe)) }}</span> HUB
                                 ~ $0,00</p>
                         </div>
 
